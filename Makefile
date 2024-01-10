@@ -1,4 +1,4 @@
-TARGET=stori-api
+TARGET=stori
 .PHONY: build deps
 
 build:
