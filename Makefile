@@ -2,7 +2,7 @@ TARGET=stori
 .PHONY: build deps
 
 build:
-	GOOS=linux go build -o $(TARGET) ./main.go
+	go build -o $(TARGET) ./main.go
 
 deps:
 	@go mod download
