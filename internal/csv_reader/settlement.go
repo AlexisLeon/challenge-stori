@@ -21,7 +21,7 @@ func NewSettlementReportReader() Reader[*models.CSVSettlementTransaction] {
 	}
 }
 
-func (r settlementReportReader) ReadRow(columns []string) error {
+func (r *settlementReportReader) ReadRow(columns []string) error {
 	if len(columns) != 3 {
 		return fmt.Errorf("invalid row, expected 3 columns, got %d", len(columns))
 	}
